@@ -1,0 +1,123 @@
+.pyq-page { max-width: 1200px; margin: 0 auto; padding: 2rem; }
+
+.pyq-hero {
+  background: linear-gradient(135deg, #059669, #0d9488);
+  border-radius: 16px;
+  padding: 2rem;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 8px 25px rgba(5,150,105,0.35);
+}
+
+.pyq-hero h2 { font-size: 1.6rem; font-weight: 700; }
+.pyq-hero p { opacity: 0.85; margin-top: 4px; font-size: 0.9rem; }
+
+.upload-fab {
+  background: white;
+  color: #059669;
+  border: none;
+  padding: 0.7rem 1.4rem;
+  border-radius: 10px;
+  font-weight: 700;
+  font-size: 0.95rem;
+  cursor: pointer;
+  font-family: 'Poppins', sans-serif;
+  transition: transform 0.2s;
+}
+.upload-fab:hover { transform: translateY(-2px); }
+
+.sem-tabs { display: flex; gap: 0.8rem; margin-bottom: 1.2rem; }
+
+.sem-tab {
+  padding: 0.65rem 1.8rem;
+  border: 2px solid #e5e7eb;
+  border-radius: 12px;
+  background: white;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  font-family: 'Poppins', sans-serif;
+  transition: all 0.2s;
+  color: #374151;
+}
+.sem-tab:hover { border-color: #059669; color: #059669; }
+.sem-tab.active { background: #059669; color: white; border-color: #059669; }
+
+.subject-filters { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 1.5rem; }
+
+.filter-btn {
+  padding: 0.38rem 1rem;
+  border: 2px solid #e5e7eb;
+  border-radius: 20px;
+  background: white;
+  font-size: 0.8rem;
+  font-weight: 500;
+  cursor: pointer;
+  font-family: 'Poppins', sans-serif;
+  transition: all 0.2s;
+  color: #374151;
+}
+.filter-btn:hover { border-color: #059669; color: #059669; }
+.filter-btn.active { background: #059669; color: white; border-color: #059669; }
+
+.pyq-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.2rem;
+}
+
+.pyq-card {
+  background: white;
+  border-radius: 14px;
+  padding: 1.3rem;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  border: 1px solid #f3f4f6;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.pyq-card:hover { transform: translateY(-3px); box-shadow: 0 8px 25px rgba(0,0,0,0.12); }
+
+.pyq-icon { font-size: 2.2rem; }
+
+.pyq-info h3 { font-size: 0.98rem; font-weight: 600; color: #1a1a2e; margin-bottom: 0.5rem; }
+
+.pyq-tags { display: flex; gap: 0.4rem; flex-wrap: wrap; margin-bottom: 0.4rem; }
+
+.tag { padding: 3px 9px; border-radius: 20px; font-size: 0.72rem; font-weight: 600; }
+.sem-tag { background: #dbeafe; color: #1d4ed8; }
+.year-tag { background: #fef3c7; color: #92400e; }
+
+.subject-tag { background: #d1fae5; color: #065f46; padding: 3px 10px; border-radius: 20px; font-size: 0.75rem; font-weight: 600; }
+
+.pyq-desc { font-size: 0.82rem; color: #6b7280; margin-top: 0.5rem; line-height: 1.5; }
+
+.pyq-meta { display: flex; flex-wrap: wrap; gap: 0.6rem; margin-top: 0.5rem; font-size: 0.78rem; color: #9ca3af; }
+
+.btn-download {
+  background: linear-gradient(135deg, #059669, #0d9488);
+  color: white;
+  border: none;
+  padding: 0.65rem;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.88rem;
+  transition: opacity 0.2s;
+  margin-top: auto;
+}
+.btn-download:hover { opacity: 0.88; }
+
+.loading-state { text-align: center; padding: 4rem; color: #6b7280; }
+.spinner { width: 40px; height: 40px; border: 4px solid #e5e7eb; border-top-color: #059669; border-radius: 50%; animation: spin 0.8s linear infinite; margin: 0 auto 1rem; }
+@keyframes spin { to { transform: rotate(360deg); } }
+
+.empty-state { text-align: center; padding: 4rem 2rem; color: #6b7280; }
+.empty-icon { font-size: 4rem; margin-bottom: 1rem; }
+.empty-state h3 { font-size: 1.3rem; color: #374151; margin-bottom: 0.5rem; }
+.empty-state button { margin-top: 1.2rem; background: #059669; color: white; border: none; padding: 0.75rem 2rem; border-radius: 10px; font-weight: 600; cursor: pointer; font-family: 'Poppins', sans-serif; }
